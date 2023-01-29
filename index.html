@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="/cart.html">
+  <title>Shopping website</title>
+</head>
+<body>
+  <!----hero Section start---->
+
+    <div class="hero">
+     
+        <nav>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="jackets.html">Jacket</a></li>
+            <li><a href="shoes.html">shoes</a></li>
+          </ul>
+        </nav>
+
+ <!--Cart modal-->
+ <div class="label">
+  <div class="cart-modal-overlay">
+      <div class="cart-modal">
+        <i id="close-btn" class="fas fa-times"></i>
+          <h1 class="cart-is-empty">Cart is empty</h1>
+        
+          <div class="product-rows">
+          </div>
+          <div class="total">
+            <h1 class="cart-total">TOTAL</h1>
+              <span class="total-price">$0</span>
+                <button class="purchase-btn">PURCHASE</button>
+          </div>
+        </div>
+      </div>
+
+ <!--End cart modal-->
+ <div class="shopping-cart" id="shopping-cart">
+  <div class="cart-btn">
+      <i id="cart" class="fas fa-shopping-cart"></i>
+        <span class ="cart-quantity">0</span>
+    </div>
+
+        
+<!--  products  -->
+  <div class="items-container">
+    <div class="card-1 card">
+      <img class="product-image" src="IMG 1.webp" alt="">
+        <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">$2000</span>
+    </div>
+    <div class="card-2 card">
+      <img class="product-image" src="IMG 2.webp" alt="">
+      <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">$1300</span>
+    </div>
+    <div class="card-3 card">
+      <img class="product-image" src="IMG 3.png" alt="">
+        <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">$1700</span>
+    </div>
+    <div class="card-4 card">
+      <img class="product-image" src="IMG 4.jpg" alt="">
+         <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">$950</span>
+    </div>  
+    <div class="card-5 card">
+      <img class="product-image" src="IMG 5.webp" alt="">
+      <button class="add-to-cart">Add to cart</button>
+      <span class="product-price">$750</span>
+    </div>
+  </div>
+<!--  end of products  -->
+    
+  </ul></div>
+
+
+<!-- Filter of products -->
+<div class="container">
+  
+  <ul class="filter-menu">
+    <li data-target="all">All</li>
+    <li data-target="jacket">jacket</li>
+    <li data-target="Shoe">Shoe</li>
+</ul>
+
+        <ul class="filter-item">
+            <li data-item="jacket"><img src="IMG 1.webp" alt=""></li>
+            <li data-item="jacket"><img src="IMG 2.webp" alt=""></li>
+            <li data-item="jacket"><img src="IMG 3.png" alt=""></li>
+            <li data-item="Shoe"><img src="IMG 4.jpg" alt=""></li>
+            <li data-item="Shoe"><img src="IMG 5.webp" alt=""></li>
+        </ul>
+    </div>
+
+
+
+  <script src="/javascript.js"></script> 
+  <script src="/filter.js"></script>
+</body>
+</html>
